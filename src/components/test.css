@@ -1,0 +1,14 @@
+.css{
+transform: scale(1.2);
+transition: scale 250ms linear;
+box-shadow: red 1px;
+align-items: center;
+justify-content: center;
+max-width: 800px;
+}
+    height: 100vh;
+        display: flex;
+        justifyContent: center,
+        alignItems: center,
+        fontSize: 40px,
+        color: #010101;
