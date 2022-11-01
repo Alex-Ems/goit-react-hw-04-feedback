@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 
 export const ContainerBtn = styled.div`
-    display: inline-flex;
-    min-width: 100px;
-    justify-content: space-evenly;
+  display: inline-flex;
+  min-width: 100px;
+  justify-content: space-evenly;
 `;
 
 export const Btn = styled.button`
@@ -17,4 +17,3 @@ export const Btn = styled.button`
     transform: scale(1.12);
   }
 `;
-
