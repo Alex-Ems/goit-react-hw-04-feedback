@@ -1,10 +1,8 @@
-import { Component } from 'react';
+
 import PropTypes from 'prop-types';
 import { ContainerTitle, Title } from './Section.styled';
 
-class Section extends Component {
-  render() {
-    const { title, children } = this.props;
+export const Section = ({ title, children }) => {
     return (
       <ContainerTitle>
         <Title>{title}</Title>
@@ -12,7 +10,7 @@ class Section extends Component {
       </ContainerTitle>
     );
   }
-}
+
 
 export default Section;
 

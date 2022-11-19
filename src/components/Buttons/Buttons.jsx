@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 import { ContainerBtn, Btn } from './Buttons.styled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  return options.map((options, index) => {
+  return options.map((option, index) => {
     return (
       <ContainerBtn>
-        <Btn type="button" key={index} name={options} onClick={onLeaveFeedback}>
-          {options}
+        <Btn type="button" key={index} name={option} onClick={() => onLeaveFeedback(option)}>
+          {option}
         </Btn>
       </ContainerBtn>
     );
@@ -16,6 +16,6 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
 export default FeedbackOptions;
 
 FeedbackOptions.propTypes = {
-  options: PropTypes.string,
-  index: PropTypes.number,
+  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
 };
